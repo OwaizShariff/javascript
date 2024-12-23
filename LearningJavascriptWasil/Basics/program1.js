@@ -5,7 +5,6 @@ function greet() {
 
 
 function personal(){
-    // Use console.log to print the information in a readable format
     console.log("Personal Information: \n" +
        "Name: " + name + "\n" +
        "Age: " + Age + "\n" +
