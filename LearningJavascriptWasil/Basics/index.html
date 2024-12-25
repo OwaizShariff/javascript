@@ -42,6 +42,9 @@
 
     <script src="program1.js"></script> <!-- External Script-->
 
+
+    <p id="demo"></p>
+
     <script>
         function named() {
             alert("Mohammed wasil");
@@ -74,7 +77,7 @@
         var Nationality = "American";
 
 
-
+        document.getElementById("demo").innerHTML = "My Name is Mohammed Wasil";
 
 
 
@@ -83,7 +86,7 @@
         var number1 = 100;
         var number2 = 200;
         var number3 = 10;
-        
+
         console.log("Adding Number 1 and Number 2 : ", number1 + number2);
         console.log("Adding Number 1 , Number 2 and Number 3 : ", number1 + number2 + number3);
 
@@ -108,6 +111,38 @@
 
 
 
+        // Comparison Operators
+
+        var price1 = 100;
+        var price2 = 200;
+        let price3 = 200;
+
+        // == 
+        var a = (price1 == price2);
+        console.log(" Checking price 1 is equal to price 2 ", a);   //checks whether price 1 is equal to price 2
+
+        var b = (price2 == price3);
+        console.log(" Is price2 is equal to price 3 ? ", b);
+
+        //=== Strict operator
+        console.log(price1 === price3);    // price 1 is var and price 3 is let 
+
+        // > greater than 
+        console.log(price1 > price2);
+        console.log(price2 > price1);
+
+        // < less than 
+        console.log(" Is price 1 is less than price 2 ?", price1 < price2);
+        console.log("Is price 2 is less than price 1 ?", price2 < price1);
+
+        // NOt Equal to ( != )
+        console.log(price1 != price2);
+
+
+        // Logical Operators 
+
+        // && ( and )
+        console.log(price1 && price2);
     </script>
 </body>
 
