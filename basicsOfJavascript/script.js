@@ -183,6 +183,46 @@ while (j <= 5) {
 }
 
 
+let k = 0;
+
+do {
+  console.log("var k",k);
+  k++; 6
+} 
+
+while (k <= 5);
+
+
+// Normal Functions
+
+//declaration
+function print() {
+    console.log("first funtion")
+}
+
+//function call
+print()
+
+
+function greet(name) {  //name is an parameter
+    console.log("The language we are studying is:", name)
+}
+
+greet("javascript") //javascript is an argument
+
+
+// Arrow funtion
+// es6 echma script6
+
+// datatype functName 
+const SubjectLearning = (name) => {
+    console.log("The language we are studying is:", name)
+}
+
+// function call
+SubjectLearning("Html and css")
+
+
 
 
 
