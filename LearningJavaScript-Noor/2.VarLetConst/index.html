@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VarLetConst</title>
+</head>
+
+<body>
+
+    <!-- variable - Used to store data. Declared with var, let, or const.
+    Datatypes - var, let, or const which can be used to declare data using 1.number, 2.string("noor"), 3.boolean values -->
+
+    <script>
+        // Declaring data using 1.number and 2. String("noor")
+        // datatype variable = data; 
+        var a = 3;
+        var firstName = "Noor"; //string
+        console.log("data of a", a);
+        console.log("firstName", firstName);
+        console.log("all logs", a, firstName);
+
+
+        let b = 4;
+        let lastName = "Saba";
+        console.log("b", b)
+        console.log("lastName", lastName);
+        console.log("firstName", firstName, "lastName", lastName);
+        console.log("Full Name", firstName, lastName, a, b);
+        // console.log("Full Name", firstName, lastName, "Email", email, a, b ,c);
+
+
+        const c = 5; // const is a constant datatype ==> cannot manipulate it.
+        const email = "noor@gmail.com";
+        console.log("c", c);
+        console.log("email", email);
+
+        console.log("Full Name", firstName, lastName, "Email", email, a, b, c);
+
+        // var - datatype used for declaring any variable. - data of a perticular variable can be manipulated.
+        // let - datatype used for declaring any variable. - data of a perticular variable can be manipulated.
+        // const - datatype used for declaring any variable. - data of a perticular variable cannot be manipulated.
+
+        a = 340;
+        console.log("manipulated data of a", a)
+
+        b = 450;
+        console.log("manipulated data of b", b)
+
+        // c = 550;
+        // console.log("manipulated data of c", c)
+        // console.log("manipulated data of c", c) ==> typeError
+
+        // 3.Declaring data using Boolean value ==> true or false;
+
+        var isEngineer = true;
+        console.log("noor is Engineer", isEngineer)
+
+        // var isCoder = false;
+        // console.log("noor isCoder", isCoder)
+
+        let person =null;
+        let adress; // gives you undefined value nothing but not defined
+        console.log(person, address);
+
+
+    </script>
+
+</body>
+
+</html>

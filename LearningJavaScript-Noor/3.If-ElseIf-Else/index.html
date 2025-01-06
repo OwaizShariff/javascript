@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement's</title>
+</head>
+
+<body>
+    <script>
+        // if, else if, and else Statement
+
+        let score = 95;
+
+        if (score >= 95) {               //   65 > 95 = false; 65 = 95
+            console.log("A grade")
+        }
+        else if (score <= 95 && score >= 65) {    // 65 <= 95 true;  65 >= 65 true  = true
+            console.log("B grade")
+        }
+        else if (score <= 65 && score >= 35) {   // 65 <= 65 true && 65 >= 35 true = true
+            console.log("C grade")
+        }
+        else {
+            console.log("you are failed")
+        }
+
+
+        let num = 10;
+
+        if (num > 20) {
+            console.log("The number is greater than 20.");
+        } else if (num > 10) {
+            console.log("The number is greater than 10 but less than or equal to 20.");
+        } else {
+            console.log("The number is 10 or less.");
+        }
+        // Output: "The number is 10 or less."
+        // if: Checks a condition and executes code if the condition is true.
+        // else if: Checks another condition if the previous if or else if was false.
+        // else: Executes code if none of the previous conditions are true.
+
+        // Multiple Conditions:
+        // let age = 18;
+
+        // if (age < 18) {
+        //     console.log("You are a minor.");
+        // } else if (age >= 18 && age < 65) {
+        //     console.log("You are an adult.");
+        // } else {
+        //     console.log("You are a senior.");
+        // }
+        // Output: "You are an adult."
+        // The if block checks if the age is less than 18.
+        // The else if block checks if the age is between 18 and 65.
+        // The else block handles the case when the age is 65 or above.
+
+
+        //Ternary Operator:
+
+        //	Ternary Operator:The ternary operator (also called the conditional operator) in JavaScript is a shorthand way of writing an if-else statement. 
+        // It takes three operands: condition ? expression_if_true : expression_if_false;
+        // Its syntax: condition ? expr1 : expr2. If the condition is true, expr1 is executed, otherwise expr2 is executed.
+
+        let age = 25;
+        age == 25 ? console.log("adult") : console.log("elder");
+        //Adult
+
+        // let age = 17;
+        // age >= 18 ? console.log("You are an adult.") : console.log("You are a minor.");
+        // // Minor
+
+        // let age = 25;
+        // let status = age >= 18 ? "adult" : "minor";
+        // console.log(status);  // Output: "adult"
+        // // Above code is equivalent to below code
+        // let status;
+        // if (age >= 18) {
+        //     status = "adult";
+        // } else {
+        //     status = "minor";
+        // }
+        // console.log(status);  // Output: "adult"
+
+    </script>
+</body>
+</html>

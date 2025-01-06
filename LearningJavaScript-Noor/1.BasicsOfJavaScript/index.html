@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning JavaScript from Basics to Advance</title>
+
+    <!-- 3. External js -->
+    <script defer src="script.js">
+    </script>
+
+</head>
+
+<body>
+    <!-- 
+        Html and css are the static
+
+        Javascript - add funtionality to webpages.(dynamic)
+
+        <button>click here</button>  
+
+        dynamic
+        
+    -->
+
+    <!-- 
+        3 ways - write the  to javascript in html file
+
+        1.inline js:
+         <button onclick="alert('Hello, World!')">More Info!</button>
+
+        
+        2.internal js:
+
+           a.  <button onclick="alert('Hello, World!')">More Info!</button>
+           b.   we can write the script tag inside <head> tag  but as we know js code runs line by line so writing script tag in the end of html file i.e inside <body> tag
+               <script>
+	             console.log('How are you doing?');
+                 console.log("Learning javascript from basics to advance")
+                 console.log("inline js internal js external js")
+               </script>
+
+        3.external js:
+             a. adding  <script src="script.js"></script> inside <head>, src="script.js" is the path to the js file
+             b. creating script.js file because i have given same inside script tag
+
+
+    -->
+                            <!-- 1. Inline js-->
+
+    <!-- <p> Hey! myself Er.Noor Saba, I am a Software Developer Intern. </p>
+
+    <button onclick="alert('Hello, Humans!')"> More Info! </button> -->
+    <!-- usually we avoid inlins js -->
+
+                            <!-- 2. Internal js-->
+
+    <!-- <p> Hey! myself Er.Noor Saba, I am a Software Developer Intern. </p>
+    <button onclick="noor('Hello, Humans!')"> More Info! </button>
+     
+    <script>
+        const noor = (message) => {
+            alert(message);
+            console.log(message);
+        }
+    </script> -->
+
+    <!-- <script>
+        function noor(message) {
+            console.log(message);
+            alert(message);
+        }
+    </script> -->
+
+                         <!-- 3. External JS-->
+                          
+    <p> Hey! myself Er.Noor Saba, I am a Software Developer Intern. </p>
+    <button onclick="noor('Hello, Humans!')"> More Info! </button>
+
+</body>
+</html>

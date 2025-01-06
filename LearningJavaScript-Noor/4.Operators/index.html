@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+
+<body>
+    <script>
+
+// 1.Arithmetic Operator: +, -, *, /, %
+
+        // var num1 = 30;
+        // var num2 = 40;
+        // var num3 = 50;
+
+        // var firstName = "Er.Noor";
+        // var last_Name = "Saba";
+
+        // console.log("Full name", firstName + " " + last_Name); // Er.Noor saba
+
+        // console.log("sum of two number", num1 + num2); // 70
+
+        // console.log("sum of three number", num1 + num2 + num3); // 120
+
+        // console.log("sub of two number", num2 - num1); // 10
+
+        // console.log("sub of two number", num3 - num2); // 10
+
+        // console.log("mul of two number", num3 * num2); // 2000
+
+        // console.log("math of three number", num1 * num2 * num3 + num1 - num3); // 60000 + (30 - 50) = 59980
+
+        // console.log("division of two number", num1 * num1 / num2); // 900/40 = 22.5
+
+        // console.log("division of two number", num1 * num1 + num2); // 900 + 40 = 940
+
+        // console.log("modules of two numbers", num2 % num1); // 10(reminder)
+
+        // console.log("percentage of the number", num1 + num2 % 10); // 40 % 10 = 0(reminder) , 30 + 0 = 30
+
+        // console.log("percentage of the number", num1 + num3 % 50); // 30 + 0 = 30
+
+// 2.Comparison Operators: ==, ===, !=, !==, >, <
+
+        // var num1 = 30;
+        // var num2 = 40;
+        // var num3 = 50;
+
+    //   console.log(num1 == num2); //false, Equility operator:This checks if    and num2 are equal after type coercion. 30 == 40 is false because 30 is not equal to 40.
+
+    // console.log(num1 === num2); //false, Strict Equality Operator: This checks if num1 and num2 are not equal after type coercion.30 != 40 is true because 30 is not equal to 40.
+
+    // console.log(num1 != num2); //true, Inequality Operator:true or false 10 != 20
+
+    // console.log(num1 !== num2); //true, Strict Inequality Operator:true or false var 10 !== var 20
+
+    // console.log(num1 > num2); //false, Greater Than Operator: true or false
+
+    // console.log(num1 < num2); //true, Less Than Operator:  true or false
+
+// == and != do type coercion (conversion) before comparison.
+// === and !== compare both value and type without doing type coercion.
+// > and < compare numeric values, and they return true if the condition is met.
+
+
+    //3.Logical Operators:
+    // 1. && (Logical AND):
+            // true && true   // true
+            // true && false  // false
+            // false && true  // false
+            // false && false // false
+
+    // 2.||(Logical OR), 
+            // true || true   // true
+            // true || false  // true
+            // false || true  // true
+            // false || false // false
+
+    // 3.!(Logical NOT)
+            // !true   // false
+            // !false  // true
+            // !0      // true (0 is falsy)
+            // !""     // true (empty string is falsy)
+            // !null   // true (null is falsy)
+
+            // &&: Returns true if both operands are true.
+            // ||: Returns true if at least one operand is true.
+            // !: Negates the truthiness of its operand (flips true to false, and false to true).
+
+        var num1 = 30;
+        var num2 = 40;
+        var num3 = 50;
+
+    console.log(num1 == num2 && num2 == num3)
+    //     false && false = false;
+
+    console.log(num2 > num1 && num3 > num2)
+    //     true && true = true;
+
+    console.log(num2 > num3 && num3 > num2)
+    //     false && true = false;
+
+    console.log(num1 == num2 || num2 == num3)  //shift + \
+    //     false || false = false;
+    
+    console.log(num2 > num1 || num3 > num2)
+    //     true || true = true;
+
+    console.log(num2 > num3 || num3 > num2)
+    //     false || true = true;
+
+
+    // Comments
+
+    // single line comment
+
+    /* 
+    Multi 
+    Line 
+    comments
+    */
+   let age = 25;
+   age == 25 ? console.log("mid-age") : age > 25 ? console.log("elder") : console.log("adult");
+
+    </script>
+</body>
+
+</html>
