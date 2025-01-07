@@ -224,6 +224,37 @@ SubjectLearning("Html and css")
 
 
 
+function returnExample(subName) {
+    return subName;
+}
+
+console.log(returnExample("Reactjs, Nodejs"));
+
+
+function abc(sub1) {
+    return "javascript class"
+}
+
+console.log(abc("nextjs"));
+
+
+const nodeNew = (coding, newcode, git) => {
+    return {
+        coding, newcode, git
+    };
+}
+
+console.log(nodeNew("vscode", "portname", "hub"));
+
+
+
+
+
+
+
+
+
+
 
 
 
