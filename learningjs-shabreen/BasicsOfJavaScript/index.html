@@ -181,6 +181,8 @@
         while (dw <= 8);
             
         // Normal Functions
+        // /its a old way of writting Function know as "Vanilla Javascript" 
+
         //declaration 
         function answer() {
          console.log("Normal Function")
@@ -189,6 +191,44 @@
         //function call
         answer()
 
+        // Any thing written inside declartion parentheses its called as "Parameter"
+        // Any thing written inside Function Call parentheses its called as "Argument"
+
+        function person(name) {
+            console.log("I get called by people with a good nickname:", name)
+         }
+
+        person("Shaba")
+
+        // Arrow funtion   // the latest way of writting function // es6 echma script6
+        
+        const Information = (Number) => {
+            console.log("my Roll Number is",Number)
+        }
+
+        // function call
+         Information("U01DF21C0037")
+
+         function ReturnEx(Lang) {
+            return Lang;
+        }
+
+        console.log (ReturnEx("Hyper text mark up lang and Cascading style sheet lang"));
+
+        function Info(para) {
+            return "Web development is the process of creating and maintaining websites or web applications that are accessed through the internet or an intranet. It involves a combination of various technologies."
+        }
+
+        console.log(Info("Web development"));
+
+
+        const options = (Datatypes, Variables ) => {
+            return {
+                Datatypes, Variables
+            };
+        }
+
+        console.log(options("Var Let Const", "Any Class name used to store data"));
     </script>
 </body>
 
