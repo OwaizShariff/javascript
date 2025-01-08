@@ -247,6 +247,40 @@ const nodeNew = (coding, newcode, git) => {
 console.log(nodeNew("vscode", "portname", "hub"));
 
 
+//object - used to store data in the of key and value pair
+
+var firstName = "owaiz";
+
+const obj1 = { firstName, age: 26, address: "mysore", indian: true };
+
+console.log("obj1", obj1.firstName, obj1.age, obj1.address, obj1.indian); //dot operator
+
+const obj2 = { obj: { firstName, age: 26, address: "mysore", indian: true } }
+
+console.log("obj2",obj2.obj.address)
+
+const obj3 = { subject: function abc() {
+    return "object function example"
+    }, 
+    obj: { firstName, age: 26, address: "mysore", indian: true }
+}
+
+console.log("funct", obj3.obj)
+
+//array - list of items
+
+const numbers = [ 1,2,3,4,5 ]
+console.log("numbers",numbers)
+
+                //  0        1         2
+const fruits = ['apple', 'banana', 'cherry'];
+console.log(fruits[1]);
+
+
+
+
+
+
 
 
 
