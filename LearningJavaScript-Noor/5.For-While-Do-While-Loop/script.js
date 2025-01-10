@@ -10,23 +10,43 @@ for (var i=0; i <= 10; i++) {
 //     Code to be executed
 // }
 
-var j = 7;
+var j = 0;
 while (j <= 7) {
   console.log("while loop",j);
   j++;
 }
+
+//3. do { code to be executed, increment/decrement operator
+// } 
+// while (condition)
+let n = 0;
+do {
+  console.log("var n",n);
+  n++; 
+} 
+while (n <= 5);
 
 // Examples
 for (var i=0; i <= 5; i++) {
     console.log("for loop", i)
 }
  
-
 var j = 0;
 while (j <= 5) {
   console.log("while loop",j);
   j++;
 }
+
+// do while loop
+let k = 0;
+
+do {
+  console.log("var k",k);
+  k++; 6
+} 
+
+while (k <= 11);
+
 
 
 // Summary of Different Loops:
