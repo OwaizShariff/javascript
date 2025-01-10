@@ -218,11 +218,8 @@ greet("javascript") //javascript is an argument
 const SubjectLearning = (name) => {
     console.log("The language we are studying is:", name)
 }
-
 // function call
 SubjectLearning("Html and css")
-
-
 
 function returnExample(subName) {
     return subName;
