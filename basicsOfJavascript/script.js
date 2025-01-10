@@ -274,7 +274,25 @@ console.log("numbers",numbers)
 
                 //  0        1         2
 const fruits = ['apple', 'banana', 'cherry'];
+console.log("fruits",fruits[2]);
+
 console.log(fruits[1]);
+
+const objectarray = [
+    { firstName, age: 26, address: "mysore", indian: true },
+    
+    function abc() {
+    return "object function example"
+    }, 
+
+    ['apple', 'banana', 'cherry']
+]
+console.log("objectarray",objectarray[1](), objectarray[0]);
+
+console.log("accessing element inside the second array",objectarray[2][0])
+
+
+
 
 
 
