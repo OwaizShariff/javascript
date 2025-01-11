@@ -269,9 +269,8 @@ console.log("funct", obj3.obj)
 const numbers = [ 1,2,3,4,5 ]
 console.log("numbers",numbers)
 
-                //  0        1         2
+
 const fruits = ['apple', 'banana', 'cherry'];
-console.log("fruits",fruits[2]);
 
 console.log(fruits[1]);
 
@@ -289,6 +288,28 @@ console.log("objectarray",objectarray[1](), objectarray[0]);
 console.log("accessing element inside the second array",objectarray[2][0])
 
 
+                    //  0        1         2   
+    const fruit = ['apple', 'banana', 'cherry'];
+    
+    //fruit.push('orange') //add the element in the last of perticular array
+    //fruit.pop() //remove the last element of perticular array
+
+    //fruit.unshift('orange') //add the element in the first of perticular array
+    // fruit.shift() //remove the first element of perticular array
+
+    // fruit.forEach((item) => console.log("arrayitems",item))
+
+    // fruit.map((item) => console.log("mapitems",item))
+
+    console.log("fruits",fruit);
+
+
+    //DOM - Document object model
+
+    // document.getElementById("hello")
+    // document.getElementsByClassName("hello-world")
+    // document.getElementsByTagName(p)
+    // document.querySelectorAll(".hello-world")
 
 
 
@@ -305,8 +326,4 @@ console.log("accessing element inside the second array",objectarray[2][0])
 
 
 
-
-
-
-
-
+ 
