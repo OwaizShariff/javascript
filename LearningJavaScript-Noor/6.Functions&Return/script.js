@@ -66,3 +66,10 @@ const multipleParameter= (  firstName, lastName, fullName) => {
     };
 }
 console.log(multipleParameter("Noor", "Saba", "Noor Saba"));
+
+
+// Arrow function 
+ const arrowFunction = (noor) => {
+     console.log("My name is:", noor)
+ }
+ arrowFunction("noor");
