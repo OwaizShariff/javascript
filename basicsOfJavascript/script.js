@@ -304,12 +304,42 @@ console.log("accessing element inside the second array",objectarray[2][0])
     console.log("fruits",fruit);
 
 
-    //DOM - Document object model
+    //DOM - Document object model - Selectors
 
     // document.getElementById("hello")
     // document.getElementsByClassName("hello-world")
     // document.getElementsByTagName(p)
-    // document.querySelectorAll(".hello-world")
+    // document.querySelectorAll("hello-world")
+    // document.querySelector("hello-world")
+
+
+    // const paragraph = document.getElementById('hello')  
+
+    // console.log("paragraph",paragraph)
+    
+
+    document.addEventListener('DOMContentLoaded', () => {     
+        const paragraph = document.getElementById('hello');
+        
+        console.log("paragraph", paragraph.textContent);
+        
+        const domPara = document.getElementsByClassName("learning-dom")
+
+        console.log("domPara",domPara[0].innerHTML)
+
+
+        const tags = document.getElementsByTagName("button")
+        console.log("tags",tags[0].outerHTML);
+
+        const querytag = document.querySelectorAll("p")
+        console.log("querytag",querytag[1].innerHTML);
+    });
+    
+    
+    
+            
+    
+    
 
 
 
@@ -317,6 +347,138 @@ console.log("accessing element inside the second array",objectarray[2][0])
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     var counter = 0;
+//     let interval;
+
+//     const startTimer = () => {
+//         interval = setInterval(() => {
+//             counter++
+//             console.log(counter)
+//         },1000)
+//     }
+//     const stopTimer = () => {
+//         clearInterval(interval)
+//     }
+
+// startTimer()
+//     setTimeout(stopTimer, 5000)
+
+
+// const addtwo = (a,b) => {
+//     return a + b;
+// }
+
+// console.log(addtwo(1,2))
+
+
+// const maxnum = () => {
+//     const arr = [1,2,3,4,5,10]
+//     return Math.max(...arr);
+// }
+
+// console.log(maxnum());
+
+
+// function pali(str) {
+//     return str === str.split('').reverse().join('')
+// }
+
+// console.log(pali("ra"));
+
+// const arrayofnumbers = [1,2,3,4,5,6,7,8,9]
+
+// function evenNumbers() {
+//     return arrayofnumbers.filter(num => num % 2 == 0)
+// }
+
+// console.log(evenNumbers());
+
+
+// function fact(num) {
+//     if (num === 0 || num === 1) {
+//         return 1;
+//     }
+//     else {
+//         return num * fact(num - 1)
+//     }
+// }
+
+// console.log(fact(10));
+
+// const array1 = [2,3,4,5,[3,2],2,3,[2,1]]
+
+// function faltArray(arrflat) {
+//     let result = [];
+
+//     for (let item of arrflat) {
+//         if (Array.isArray(item)) {
+//             result = result.concat(flattenArray(item))
+//         }
+//         else {
+//             result.push(item)
+//         }
+//     }
+//     return result
+// }
+// console.log(faltArray(array1));
+
+// const array1 = [2, 3, 4, 5, [3, 2], 2, 3, [2, 1]];
+
+// function flattenArray(arr) {
+//   let result = [];
+
+//   for(let item of arr) {
+//     if (Array.isArray(item)) {
+//         result = result.concat(flattenArray(item))
+//     }
+//     else {
+//         result.push(item)
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(flattenArray(array1));
+
+
+// console.log(array1.flat())
 
 
 
