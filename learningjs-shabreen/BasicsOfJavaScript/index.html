@@ -253,9 +253,9 @@
         console.log("Numbers",numbers)
 
         const mobilebrands = ['i-phone', 'Samsung', 'Lenovo'];
-        console.log("Fav Phone Brand:",mobilebrands[2]);
+        console.log("Fav Phone Brand:",mobilebrands[1]);
 
-        console.log("Worst phone Brand:", mobilebrands[1]);
+        console.log("Worst phone Brand:", mobilebrands[0]);
 
         const bags = [
         { slingbag: "Jaquomus,", totebag: "Marc-Jacobs,", handbag, ilikebags: true },
@@ -269,6 +269,22 @@
         console.log("variousBags:",bags[1](), bags[0]);
 
         console.log("accessing element inside the third and fifth array", bags[2][4])
+
+        const mobilebrand = ['i-phone', 'Samsung', 'Lenovo'];
+        console.log("mobilebrands",mobilebrand);
+
+        mobilebrand.push('Realme') //add the element in the last of perticular array
+        mobilebrand.pop() //remove the last element of perticular array
+
+        mobilebrand.unshift('vivo') //add the element in the first of perticular array
+        mobilebrand.shift() //remove the first element of perticular array
+
+        mobilebrand.forEach((phone) => console.log("listofmobilebrandarray-",phone))
+
+        mobilebrand.map((phone) => console.log("mobilephones-maps",phone))
+
+        //DOM - Document object model - Selectors
+
     </script>
 </body>
 </html> 
