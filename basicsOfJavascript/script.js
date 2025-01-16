@@ -332,20 +332,32 @@ console.log("accessing element inside the second array",objectarray[2][0])
         console.log("tags",tags[0].outerHTML);
 
         const querytag = document.querySelectorAll("p")
-        console.log("querytag",querytag[1].innerHTML);
+        console.log("querytag",querytag);
+
+
+        //manipulating tag content
+
+        const helloDiv = document.getElementById("hello-div")
+
+        helloDiv.textContent = "Hello DOM"
+
+
+        //creating new tags dynamically and appending it to the main(div)tag
+        
+        const paraContainer = document.getElementById("para-container")
+        
+        const newpara = document.createElement("p")
+        
+        newpara.textContent = "This is a dynamic tag"
+
+        console.log("paraContainer",paraContainer,newpara);
+
+        paraContainer.appendChild(newpara)
+        
+        
     });
     
     
-    
-            
-    
-    
-
-
-
-
-
-
 
 
 
