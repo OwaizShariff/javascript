@@ -378,7 +378,7 @@ console.log("accessing element inside the second array",objectarray[2][0])
 
         console.log("getCompAlt",getCompAlt2);
         
-
+        //events handling
         const clickButton = document.getElementById("myButton")
 
         clickButton.addEventListener('click', () => {
