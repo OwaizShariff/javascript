@@ -7,3 +7,5 @@ abc("Javascript")
 const pqr = { name:"shabreen", age: 21, city:"Mysore", iamastudent:true}
 
  console.log("Pqr", pqr.name, pqr.age,pqr.city,pqr.iamastudent)
+
+ 
