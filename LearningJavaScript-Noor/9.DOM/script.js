@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let id = document.getElementById("Hey!");
     console.log(id);//gives you the entire tag
     console.log(id.innerHTML);//gives u the text
-});
+
 //By using the id of HTML element, we can select that particular HTML element.
 //In above example, we are selecting n element by id, if the element is found, the method will return the element as an object. if not found text will return null.
 
@@ -48,3 +48,25 @@ console.log(select.innerHTML);
 const selectAll = document.querySelectorAll(".querySelector")
 console.log(selectAll);
 console.log(selectAll.innerHTML);
+
+
+//manipulating tag content
+
+const helloDiv = document.getElementById("hello-div")
+
+helloDiv.textContent = "Hello DOM"
+
+
+//creating new tags dynamically and appending it to the main(div)tag
+
+const paraContainer = document.getElementById("para-container")
+
+const newpara = document.createElement("p")
+
+newpara.textContent = "This is a dynamic tag"
+
+console.log("paraContainer",paraContainer,newpara);
+
+paraContainer.appendChild(newpara)
+
+});
