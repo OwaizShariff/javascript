@@ -354,6 +354,38 @@ console.log("accessing element inside the second array",objectarray[2][0])
 
         paraContainer.appendChild(newpara)
           
+
+
+        //removing child
+        const secondContainer = document.getElementById("remove-container")
+
+        const childRemove = document.getElementById("removing-child")
+
+        secondContainer.removeChild(childRemove)
+
+
+        //Get/Set Attributes
+
+        const ComputerImg = document.getElementById("computer-img")
+
+        const getCompAtt1 = ComputerImg.getAttribute("src")
+
+        console.log("getCompAtt",getCompAtt1);
+        
+        
+        ComputerImg.setAttribute('alt', 'comp-img')
+
+        const getCompAlt2 = ComputerImg.getAttribute("alt")
+
+        console.log("getCompAlt",getCompAlt2);
+        
+        //events handling
+        const clickButton = document.getElementById("myButton")
+
+        clickButton.addEventListener('click', () => {
+            alert('Button clicked!');
+        })
+        
     });
     
     

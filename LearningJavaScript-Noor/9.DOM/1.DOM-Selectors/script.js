@@ -6,6 +6,19 @@
 // By using DOM we can dynamically change, add, or delete HTML elements.
 // The HTML DOM can be accessed with JavaScript and with other programming languages.
 
+
+//1.DOM SELECTORS
+
+//Selecting HTML Elements
+// We have to select HTML elements to apply styles or affects by using javascript. We can select elements in different ways.
+
+// 1.Selecting HTML elements by id
+// 2.Selecting HTML elements by tag name
+// 3.Selecting HTML elements by class name
+// 4.Selecting HTML elements by css:
+    // 1.querySelector
+    //2.querySelectorAll
+
 // The issue you're encountering is likely because the JavaScript code is running before the HTML is fully loaded. When you try to access the element with document.getElementById("Hey"), the element hasn't been rendered in the DOM yet, and that's why you're getting null.
 
 // To resolve this, you can make sure the JavaScript runs after the DOM is fully loaded. You can either:
@@ -50,6 +63,12 @@ console.log(selectAll);
 console.log(selectAll.innerHTML);
 
 
+
+
+
+
+
+
 //manipulating tag content
 
 const helloDiv = document.getElementById("hello-div")
@@ -68,5 +87,40 @@ newpara.textContent = "This is a dynamic tag"
 console.log("paraContainer",paraContainer,newpara);
 
 paraContainer.appendChild(newpara)
+
+
+//removing child
+const secondContainer = document.getElementById("remove-container")
+
+const childRemove = document.getElementById("removing-child")
+
+secondContainer.removeChild(childRemove)
+
+//Get/Set Attributes
+
+const ComputerImg = document.getElementById("computer-img")
+
+const getCompAtt1 = ComputerImg.getAttribute("src")
+
+console.log("getCompAtt",getCompAtt1);
+
+
+ComputerImg.setAttribute('alt', 'comp-img')
+
+const getCompAlt2 = ComputerImg.getAttribute("alt")
+
+console.log("getCompAlt",getCompAlt2);
+
+ //events handling
+ const clickButton = document.getElementById("myButton")
+
+ clickButton.addEventListener('click', () => {
+     alert('Button clicked!');
+ })
+
+
+
+
+
 
 });
