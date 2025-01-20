@@ -353,6 +353,7 @@ console.log("accessing element inside the second array",objectarray[2][0])
         console.log("paraContainer",paraContainer,newpara);
 
         paraContainer.appendChild(newpara)
+          
 
 
         //removing child
