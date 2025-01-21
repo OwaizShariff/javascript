@@ -384,6 +384,60 @@ console.log("accessing element inside the second array",objectarray[2][0])
         clickButton.addEventListener('click', () => {
             alert('Button clicked!');
         })
+
+
+        const getMyList = document.getElementById("myList")
+        console.log("getMyList",getMyList);
+
+        console.log(getMyList.childNodes); 
+        console.log(getMyList.firstElementChild); 
+        
+        // adding dynamic content
+
+        const dynamicContainer = document.getElementById("dynamic-container")
+
+        const loadData = document.getElementById("load-data")
+        const removeData = document.getElementById("remove-data")
+
+        loadData.addEventListener("click", () => {
+            dynamicContainer.textContent = "data adding dynamically"
+        })
+
+        removeData.addEventListener("click", () => {
+            dynamicContainer.textContent = null;
+        })
+
+        // form validation with form tag
+
+        const myForm = document.getElementById("myForm")
+        const formError = document.getElementById("error")
+
+        myForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const username = document.getElementById("username").value
+            console.log("username",username);
+
+            if (!username) {
+                formError.textContent = "please add the proper details"
+            } else {
+                formError.textContent = null
+            }
+        })
+
+
+        // form validation without form tag
+        const login = document.getElementById("login")
+        const usesError = document.getElementById("user-error")
+        
+        login.addEventListener("click", () => {
+            const userId = document.getElementById("userid").value;
+            if (!userId) {
+                usesError.textContent = "Please add the user name";
+            } else {
+                usesError.textContent = null;
+            }
+        })
         
     });
     
