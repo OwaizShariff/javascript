@@ -414,7 +414,7 @@ console.log("accessing element inside the second array",objectarray[2][0])
         const formError = document.getElementById("error")
 
         myForm.addEventListener("submit", (e) => {
-            e.preventDefault();
+            e.preventDefault(); //stop the page refresh
             
             const username = document.getElementById("username").value
             console.log("username",username);
@@ -438,9 +438,38 @@ console.log("accessing element inside the second array",objectarray[2][0])
             } else {
                 usesError.textContent = null;
             }
-        })
+            })
+            
+        });
+
+
+        // ES6 - template literal
+
+        const myCourseName = "Javascript";
+
+        console.log("myCourseName",  `My course name is: ${myCourseName}`);
+
+        //Destructuring
+
+        const newFruit = ["apple", "banana", "mango"];
+
+        const [alpha, beta] = newFruit;
+
+        console.log("this is alpha",alpha);
+        console.log("this is beta",beta);
+        // console.log("this is gama",gama);
+
+        const objDesc = { newName: "john doe", newAge: 35, newPlace: "australia" }
+
+        const {newName, newAge, newPlace} = objDesc
+
+        console.log("newName is:",newName);
+        console.log("newAge is:",newAge);
+        console.log("newPlace is:",newPlace);
         
-    });
+        
+        
+        
     
     
 
