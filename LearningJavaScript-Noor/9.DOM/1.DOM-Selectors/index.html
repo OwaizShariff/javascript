@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript</title>
-    <script src="script.js"></script>
+    <title>DOM-Selectors</title>
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <!-- 
-        Html and css are the static
+    <!--1.DOM SELECTORS by id,class,tag,querySelectorAll -->
+    <n id="Hey!">How are you doing?</n>
 
-        Javascript - add funtionality to webpages.(dynamic)
+    <class class="helloHumans">How are you doing? </class>
 
-        <button>click here</button>  
+    <p>How are you doing?</p>
+    <button onclick="alert('Hello, World!')">Click Me</button>
 
-        dynamic
-        
-    -->
+    <query class="querySelector">Hey! How are you doing?</query>
 
-    <!-- 
-        3 ways - write the  to javascript in html file
-
-        inline js.
-        internal js.
-        external js.
-
-    -->
-        <p id="hello" class="hello-world">Hello world!</p>
-
-        <p class="learning-dom">Learning DOM</p>
-
-    <button class="simple-button" onclick="alert('Hello, World!')">Click Me</button>
+    <query class="querySelector">Hey!Humans?</query>
 
     <div id="hello-div">Hello World!</div>
     
@@ -42,53 +31,13 @@
         <p id="removing-child">Child para</p>
     </div>
 
-
     <img id="computer-img" src="data:image/jpeg;base64,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" 
     alt="computer-image" />   
-
 
     <button id="myButton">Click Me!</button>
 
 
-    <ul id="myList">
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
-
-    <!-- Adding data dynamically -->
-    <div id="dynamic-container"></div>
-
-    <br/>
-    <button id="load-data">Load data</button>
-    <button id="remove-data">Remove data</button>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <form id="myForm">
-        <input type="text" id="username" placeholder="Enter username">
-        <button type="submit">Submit</button>
-    </form>
-
-    <br/>
-    <div id="error" style="color: red;"></div>
     
-
-    <input placeholder="userid" id="userid" />
- 
-    <button id="login">Login</button>
-    <br />
-
-    <div id="user-error" style="color: red;"></div>
-
-	<script>
-	
-
-
     
-
-
-    </script>
 </body>
 </html>
