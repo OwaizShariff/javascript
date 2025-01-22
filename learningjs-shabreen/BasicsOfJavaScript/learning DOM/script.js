@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
     const paravar = document.getElementById("para-code")
         const newpara = document.createElement("p")
-    newpara.textContent = "This one is a dynamic tag"
+
+        newpara.textContent = "This one is a dynamic tag"
         console.log("dynamic-code-ex:", paravar,newpara);
-    paravar.appendChild(newpara)
+        paravar.appendChild(newpara)
 
     //manipulating tag content
 
@@ -49,5 +50,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
         clickButton.addEventListener('click', () => {
         alert('This is the example of event handling used with the button feature code for execution!');
+        })
+
+    const elementslist = document.getElementById("elements")
+        console.log("elementslist",elementslist);
+
+        console.log(elementslist.childNodes);
+        console.log(elementslist.firstElementChild);
+        console.log(elementslist.lastElementChild);
+
+    // Dynamic Content Loading
+    const dynamicContainer = document.getElementById("dynamic-box")
+
+        const LoadData = document.getElementById("load-data")
+        const RemoveData = document.getElementById("remove-data")
+
+        // Adding Data
+        LoadData.addEventListener('click', () => {
+            dynamicContainer.textContent ="Dynamic Content Loading"
+        })
+
+        // Removing Data
+        RemoveData.addEventListener('click', () => {
+            dynamicContainer.textContent = null;
+        })
+
+    // Validation of form without form tag
+    const login = document.getElementById("login")
+    const usererror = document.getElementById("user-error")
+
+        login.addEventListener('click', (e) => {
+            const UserID = document.getElementById("UserID").value
+            
+            if(!UserID) {
+                usererror.textContent = "ADD the User Name"
+            } else {
+                usererror.textContent = null;
+            }
+    })
+
+    // Validation of Form with form tag
+    const MyForm = document.getElementById("Form")
+    const Formerror = document.getElementById("Error")
+
+        MyForm.addEventListener('click', (e) => {
+            e.preventDefault(); //it stops the page reload
+            const username = document.getElementById("Username").value
+            console.log("Username",username);
+
+            if(!username) {
+                Formerror.textContent = "The Columb is Empty, ADD the details Above"
+            } else {
+                Formerror.textContent = null;
+            }
         })
 });
