@@ -105,3 +105,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 });
+
+// ES6 - echma script6:-
+    // template literal
+
+    const course = "HTML, CSS, and JS."
+        console.log(`The Topics i am studing is: ${course}`);
+
+    //Destructuring
+    // Example using Array Method
+    const Apps = ["WhatsApp", "Snapchat", "YouTube"];
+        const [a, b, c] = Apps;
+
+        console.log("An App used for comunication:",a);
+        console.log("An App used for making snap:",b);
+        console.log("An App used for Entertainment and vlogging:",c)
+
+    // Example using Object Method
+    const Info = { Name: "Ahad Raza Mir", Age: 32, Place: "Pakistan", Profession: "Celebrity"}
+        const {Name, Age, Place, Profession} = Info
+
+        console.log("Name:",Name);
+        console.log("Age:",Age);
+        console.log("Place:",Place);
+        console.log("Profession:",Profession);
