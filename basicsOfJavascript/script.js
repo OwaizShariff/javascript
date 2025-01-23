@@ -467,7 +467,76 @@ console.log("accessing element inside the second array",objectarray[2][0])
         console.log("newAge is:",newAge);
         console.log("newPlace is:",newPlace);
         
+        //	Spread and Rest Operators:
+
+        const vegetables = ['carrot', 'potato', 'spinach'];
+
+        const newVeg = [...vegetables, 'tomato']
+
+        console.log("newVeg",newVeg);
         
+
+        const fruitsOne = ['apple', 'banana'];
+
+        const newFrt = [...fruitsOne, 'chiku']
+
+        console.log("newFrt",newFrt);
+
+
+        //object 
+
+        const user = { name: 'Alice', age: 25 };
+
+        const newUser = {...user, location: "america"}
+
+        console.log("newUser",newUser);
+
+
+        const user1 = { name: 'Bob', age: 30 };
+
+        const newUser1 = {...user1, age: 25, address: "NY"}
+
+        console.log("newUser1",newUser1);
+
+        
+        const logFirstAndRest = (first, ...rest) => {
+            console.log('First:', first);
+            console.log('Rest:', rest);
+        };
+
+        logFirstAndRest(10, 20, 30, 40);
+        
+        // Promises: asyncronus operations - 3 states - pending, resolved, rejected
+
+        // .then .catch
+
+        // api = frontend(wants data from) <->(api)<-> backend(database)
+
+        const promise = new Promise((pending, resolve, reject) => {
+            resolve('Data feteched')
+            reject('Coulnt fetch the data')
+        })
+
+
+    	const fetchData = () => {
+        	  return new Promise((resolve, reject) => {
+                const success = true;
+
+                if (success == true) {
+                    resolve('Data feteched')
+                }
+                else {
+                    reject('Coulnt fetch the data')
+                }
+            })
+        };
+
+        fetchData().then(console.log).catch(console.log);
+            
+
+
+
+
         
         
     
