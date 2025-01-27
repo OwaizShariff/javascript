@@ -448,7 +448,8 @@ console.log("accessing element inside the second array",objectarray[2][0])
         const myCourseName = "Javascript";
 
         console.log("myCourseName",  `My course name is: ${myCourseName}`);
-
+ 
+    
         //Destructuring
 
         const newFruit = ["apple", "banana", "mango"];
@@ -608,7 +609,7 @@ console.log("accessing element inside the second array",objectarray[2][0])
         
     
     
-
+ 
 
 
 

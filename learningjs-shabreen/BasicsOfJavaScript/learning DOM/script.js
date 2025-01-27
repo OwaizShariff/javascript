@@ -129,3 +129,59 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Age:",Age);
         console.log("Place:",Place);
         console.log("Profession:",Profession);
+
+
+//	Spread and Rest Operators:
+    
+    //Spread is for expanding or (Addition) of elements from an array or object.
+    // Array:- 
+    const colours = ['Mauve Mist', 'Dusty Rose', 'Celestial Blue'];
+        const newcolour = [...colours, 'Pale Taupe']
+        console.log("Colours:",newcolour);
+    
+    const flowers = ['Rose', 'Orchid','Daisy'];
+        const newflower = [...flowers, 'Cherry Blossom']
+        console.log("Flowers:",newflower);
+
+    // Rest is for collecting elements into an array or object.
+    //object:-
+    const userinfo = { name: 'Bilal Abbas', age: 31};
+        const newinfo = {...userinfo, location: "Pakistan"}
+        console.log("User-Information",newinfo);
+
+    const person = { name: 'Shahveer Jafry', age: 35};
+    const addionalinfo = {...person, age: 30, address: "Canada"}
+    console.log("newUser1",addionalinfo);
+    
+    // logging of First and Rest:
+    const logFirstAndRest = (first, ...rest) => {
+        console.log('First:', first);
+        console.log('Rest:', rest);
+    };
+
+    logFirstAndRest("Let your heart guide you through the quiet moments",
+        "Peace begins with a smile",
+        "You are enough exactly as you are",
+        "Trust the timing of your life"
+    );
+
+// Promise:- asyncronus operations
+    const promise = new Promise((pending, resolve, reject) => {
+        resolve('Data fetched')                                     
+        reject('coulnt fetch the data')
+    })
+
+    const fetchData = () => {
+       return new Promise((resolve, reject) => { 
+            const success = true; 
+        
+            if (success == true) { 
+                resolve('Data Fetched')
+            }
+            else {
+                reject('Couldnt fetch the data')
+            }
+       })
+    };
+
+    fetchData().then(console.log).catch(console.log);
