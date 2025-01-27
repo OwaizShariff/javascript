@@ -532,6 +532,73 @@ console.log("accessing element inside the second array",objectarray[2][0])
         };
 
         fetchData().then(console.log).catch(console.log);
+
+
+        //set timeout - exicutes after some seconds - callback - async
+
+       const afterTime = () => {
+        setTimeout(() => {
+            console.log("Executed after 1 second");
+        },1000)
+        setTimeout(() => {
+            console.log("Executed after 2 second");
+        },2000)
+        setTimeout(() => {
+            console.log("Executed after 3 second");
+        },3000)
+        setTimeout(() => {
+            console.log("Executed after 4 second");
+        },4000)
+        setTimeout(() => {
+            console.log("Executed after 5 second");
+        },5000) //5000ms - 5 second
+       }
+
+    //    afterTime();
+
+
+       const delayPromise = () => {
+        const promise = new Promise((resolved, rejected) => {
+            setTimeout(() => {
+                resolved("Executed after 2 seconds")
+            },2000)
+        })
+        return promise;
+       }
+
+
+       delayPromise().then((message) => console.log(message));
+
+
+    // promise - handle the asynchronus operations - it returns a object as a result of the async oper
+
+    // https://fakestoreapi.com/products/1 - api
+
+    // fetch('https://fakestoreapi.com/products/1') // api call
+    //    .then(resp => resp.json())
+    //    .then(data => console.log(data))
+    //    .catch(err =>  console.log(err))
+
+
+    // async and await - handling the promises
+    
+    const fetchApiAysnc = async () => {
+        try {
+            const fetchApi = await fetch('https://fakestoreapi.com/products/1')
+            const data = await fetchApi.json()
+            console.log(data);
+        }
+        catch(err) {
+            console.log(err);
+        }
+    }
+
+    fetchApiAysnc()
+
+
+        
+
+
             
 
 
