@@ -185,3 +185,40 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     fetchData().then(console.log).catch(console.log);
+
+    //set timeout -  it executes after some seconds as written:
+
+    const afterTime = () => {
+    setTimeout(() => {
+        console.log("SetTimeout option executes the result after 5 sec "); 
+    },5000)
+    setTimeout(() => {
+        console.log("SetTimeout option executes the result after 10 sec");
+    },10000)
+    setTimeout(() => {
+        console.log("SetTimeout option executes the result after 15 sec "); 
+    },15000)
+    setTimeout(() => {
+        console.log("SetTimeout option executes the result after 30 sec "); 
+    },30000)
+    setTimeout(() => {
+        console.log("SetTimeout option executes the result after 60 sec "); 
+    },60000)
+
+    }
+
+    afterTime()
+
+    // After time
+
+    const delayPromise = () => {
+        const promise = new Promise ((resolved, rejected) => {
+            setTimeout(() => {
+                resolved("After time option executes the result after 10 sec")
+            },10000)
+        })
+        return promise;
+       }
+
+
+       delayPromise().then((message) => console.log(message)); 
