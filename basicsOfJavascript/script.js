@@ -11,6 +11,7 @@
     // Datatypes - var, let, or const.
     
 //  datatype variable = data;
+
 var a = 10;
 var fistName = "Owaiz"; //string
 
@@ -597,7 +598,51 @@ console.log("accessing element inside the second array",objectarray[2][0])
     fetchApiAysnc()
 
 
-        
+    // Closures - Even after the outer function has beeen exicuted the inner most function can access the outer function variable.
+
+    function outerFunc() {
+        var outerVar = 10;
+
+        function innerFunction() {
+            return console.log("Outer variable value closure",outerVar); // closure variable
+        }
+        innerFunction()
+    }
+
+    outerFunc()
+
+    // Modules - set of code, reuse this code - names import, default import
+    //named import
+    import {scriptTwoVar} from "./scriptTwo.js"
+
+    //default import
+    import varTwo from "./scriptTwo.js"
+
+    console.log("scriptTwoVar from different file",scriptTwoVar,varTwo);
+
+    // import { add } from './scriptTwo.js';
+    // console.log(add(2, 3));
+
+
+    // Use try, catch, and finally.
+
+	// try {
+	//   const result = riskyFunction();
+	// } 
+    
+    // catch (error) {
+	//   console.error(error);
+	// } 
+    
+    // finally {
+	//   console.log('Cleanup');
+    // }
+
+
+    
+
+
+
 
 
             
