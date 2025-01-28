@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Events</title>
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    
+    <!-- 1.onclick Event Type -->
+    <h>Hey ? How are you doing? </h>
+    <button onclick="buttonClick()"> click me!</button>
+
+    <button id="myButton">Click Me!</button>
+
+    <form>
+        <input type="button" value="ClickMe!" onclick="inputButton()" />
+    </form>
+
+    <!-- 2.onmouseover and onmouseout -->
+    <div onmouseover="over()">
+        <h2> Hover on me </h2>
+    </div>
+
+    <!-- 3.onsubmit Event Type -->
+    <form onsubmit="myFunction()">
+        <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    
+
+
+</body>
+
+</html>
