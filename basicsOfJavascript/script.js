@@ -639,7 +639,75 @@ console.log("accessing element inside the second array",objectarray[2][0])
     // }
 
 
+    //  Write a function to find the largest number in an array.
+
+    // Math
+
+    const findArray = [2,3,4,5,7,8];
+
+    const findLargest = (arr) => {
+        const largestNumber = Math.max(...arr)
+        return console.log("largest number",largestNumber)
+    }
+
+    findLargest(findArray)
+
+
+    // Reverse a string using JavaScript.
+
+    const normalString = "javascript";
+
+    const reverseString = (str) => {
+        const reversedString = str.split('').reverse().join('')
+        console.log("reversedString",reversedString);
+    }
+
+    reverseString(normalString)
+
+    // Write a function to check if a string is a palindrome.
+
+
+    const palindrome = (str) => {
+        const reversedString = str.split('').reverse().join('')
+        if (str === reversedString) {
+            return console.log("Given string is palindrome");
+        }
+        else {
+            console.log("Given string is not palindrome");
+        }
+        
+    }
+
+    palindrome("madam")
+
+    // Create a function to remove duplicates from an array.
+
+    const arrayWithDup = [1, 2, 2, 3, 4, 4, 5];
+
+    const remDup = (arr) => {
+        const removeDupicate = [...new Set(arr)]
+        return console.log(removeDupicate)
+    }
+
+    remDup(arrayWithDup)
     
+
+    const nestedArray = [1, [2, 3], [4, [5, 6]]];
+
+    const flatAnArray = () => {
+        const flatArray = nestedArray.flat(Infinity)
+        return console.log("flatArray",flatArray);
+    } 
+
+    flatAnArray(nestedArray)
+
+    const arr = [1, 2, 3];
+
+    const mappingArray = arr.map((item, index) => item * 2);
+
+    console.log("mappingArray",mappingArray);
+    
+
 
 
 
