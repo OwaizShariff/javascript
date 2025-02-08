@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    afterTime()
+    afterTime()  // (Function Call)
 
     // After time
 
@@ -219,6 +219,48 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         return promise;
        }
-
-
        delayPromise().then((message) => console.log(message)); 
+       
+    //    promise handles the asyncronus operations
+
+    fetch ('https://fakestoreapi.in/api/products/category?type=mobile')
+       .then(respond => respond.json())
+       .then(data => console.log(data))
+       .catch(error => console.log(error))
+
+    // async and await - handling the promises
+
+    const asyncApiFetch = async () => {
+        try{
+            const Apifetch = await fetch('https://fakestoreapi.in/api/products')
+            const data = await Apifetch.json()
+            console.log(data);   
+        }
+        catch(error) {
+            console.log(error);   
+        }
+    }
+    asyncApiFetch()
+
+    // Closures :- Even after the outer function has been exicuted the inner function can access the outer function variable.
+
+    function outerfunction() {
+        var firstvariable = 528794463285;
+
+        function innerFunction() {
+            return console.log('Execution of variable using inner function inside outer function:',firstvariable);
+        }
+        innerFunction()
+    } 
+    outerfunction()
+
+    // modules:-set of code, reuse this code - names import, default import
+
+    // Name Import:-
+    import {secondvariable} from './script2.js'
+
+    // Default Import:-
+    import variabletwo from './script2.js'
+
+    console.log('The code had been imported from differnt file:',secondvariable,variabletwo);
+    
