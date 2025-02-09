@@ -257,10 +257,69 @@ document.addEventListener('DOMContentLoaded', () => {
     // modules:-set of code, reuse this code - names import, default import
 
     // Name Import:-
-    import {secondvariable} from './script2.js'
+        import {secondvariable} from './script2.js'
 
     // Default Import:-
-    import variabletwo from './script2.js'
+        import variabletwo from './script2.js'
 
     console.log('The code had been imported from differnt file:',secondvariable,variabletwo);
+
+    // Function to find the largest number in an Array.
+
+    const FindLargestArray = [1,2,3,4,5,6,7,8,9];
+        
+        const FindLargestNo = (array) => {
+            const LargeNumber = Math.max(...array)
+            return console.log('LargestNumber:',LargeNumber)
+        }
+    FindLargestNo(FindLargestArray)
+
+    // Reversing the string using JavaScript.
+
+    const String = 'Supercalifragilisticexpialidocious';
+
+        const reverseString = (string) => {
+            const reversedString = string.split('').reverse().join('')
+            console.log("Reversed String:",reversedString);
+        }
+    reverseString(String)
+
     
+    // Function to check if a string is a palindrome.
+
+    const palindrome = (string) => {
+        const reversedString = string.split('').reverse().join('')
+        if (string === reversedString) {
+            return console.log("The Following String is Palindrome: level, rotator, civic");
+        }
+        else {
+            console.log("The Following String is Not-Palindrome:");
+        }
+    }
+    palindrome("level")
+
+    // Function to remove duplicates from an Array.
+
+    const arrayDuplicate = [22, 22, 44, 55, 55, 88, 99, 99, 100];
+
+     const removeDuplicate = (arr) => {
+         const removedDupicate = [...new Set(arr)]
+         return console.log(removedDupicate)
+     }
+    removeDuplicate(arrayDuplicate)
+
+    // Function to Flatten an Array.
+
+    const nestedArray = [100, [250, 330], [440, [550, 670]]];
+
+        const FlatArray = () => {
+            const flatArray = nestedArray.flat(Infinity)
+            return console.log("Flat Array:",flatArray);
+        } 
+    FlatArray(nestedArray)
+
+    // Function for Mapping an Array.
+
+    const array = [100, 2500, 4000000];
+        const mappingArray = array.map((item, index) => item * 5);
+        console.log("Mapping of an Array",mappingArray);
